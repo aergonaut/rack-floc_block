@@ -24,17 +24,11 @@ Or install it yourself as:
 
 ### Rails usage
 
-Create an initializer to add the middleware to your stack:
-
-```ruby
-# config/initializers/floc_block.rb
-
-Rails.application.config.middleware.use Rack::FlocBlock
-```
+If you are using Rails, this gem will configure itself automatically. Just include it in your Gemfile and that's it!
 
 ### Non-Rails Rack usage
 
-For non-Rails Rack apps, use the middleware directly in your rackup file.
+For non-Rails Rack apps, use the middleware directly in your rackup file:
 
 ```ruby
 # config.ru

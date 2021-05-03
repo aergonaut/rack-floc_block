@@ -25,3 +25,5 @@ module Rack
     end
   end
 end
+
+require "rack/floc_block/railtie" if defined?(::Rails::Railtie)
